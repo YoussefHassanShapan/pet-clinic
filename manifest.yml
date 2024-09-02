@@ -1,0 +1,9 @@
+applications:
+  - name: pet-clinic
+    memory: 896M
+    instances: 1
+    path: target/pet-clinic.jar
+    buildpacks:
+      - java_buildpack
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 17.+ } }'
